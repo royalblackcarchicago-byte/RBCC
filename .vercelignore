@@ -1,4 +1,5 @@
 # vite/ is the local prototype build of the homepage (see README).
-# The Next.js app at the repo root is what ships; keep the prototype
-# out of the deployment so it is never built or scanned as a service.
+# The Next.js app at the repo root is what ships; keep the prototype out
+# of the deployment so it is never uploaded, built, or picked up by
+# Vercel's framework detection.
 vite/
