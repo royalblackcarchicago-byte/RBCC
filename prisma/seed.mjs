@@ -185,7 +185,7 @@ async function main() {
     heroTitle: "Talk to dispatch",
     heroLead: "Call, text or email any time — dispatch answers day and night and can quote a trip on the spot.",
     introHeading: "Dispatch, 24 hours a day",
-    officeNote: `Chicago, IL 60601 (street address to be confirmed — call or text for meet-up details)`,
+    officeNote: `1845 W Golf Rd unit 191, Mt Prospect, IL 60056`,
   }, {
     metaTitle: "Contact Us | Royal Black Car Chicago",
     metaDescription: "Reach Royal Black Car Chicago dispatch by phone, text or email, 24 hours a day — or send a message and we'll reply within minutes.",
