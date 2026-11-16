@@ -9,7 +9,7 @@ export const localBusiness = {
   telephone: "+1-312-555-0142",
   email: EMAIL,
   priceRange: "$$$",
-  address: { "@type": "PostalAddress", streetAddress: "REPLACE WITH STREET", addressLocality: "Chicago", addressRegion: "IL", postalCode: "60601", addressCountry: "US" },
+  address: { "@type": "PostalAddress", streetAddress: "1845 W Golf Rd unit 191", addressLocality: "Mount Prospect", addressRegion: "IL", postalCode: "60056", addressCountry: "US" },
   openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" }],
   areaServed: ["Chicago","Schaumburg","Naperville","Oak Brook","Arlington Heights"].map(name => ({ "@type": "City", name })),
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "312" },
