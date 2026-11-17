@@ -27,7 +27,7 @@ export default async function sitemap() {
     ...fleet.map((f) => f.href),
     ...toLocations(areas).map((l) => l.href),
     ...venues.map((v) => v.href),
-    ...posts.map((p) => `/blog/${p.slug}/`),
+    // ...posts.map((p) => `/blog/${p.slug}/`),
   ];
   return paths.map((p) => ({ url: base + p, lastModified: new Date() }));
 }
