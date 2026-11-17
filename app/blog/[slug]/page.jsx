@@ -12,11 +12,19 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = await getBlogPost(slug);
   if (!post) return {};
-  return pageMeta({
+  // return pageMeta({
+  //   title: post.metaTitle || `${post.title} | Royal Black Car Chicago`,
+  //   description: post.metaDescription || post.excerpt,
+  //   path: `/blog/${post.slug}/`,
+  // });
+  return {
+  ...pageMeta({
     title: post.metaTitle || `${post.title} | Royal Black Car Chicago`,
     description: post.metaDescription || post.excerpt,
     path: `/blog/${post.slug}/`,
-  });
+  }),
+  robots: { index: false, follow: true },
+};
 }
 
 export default async function Page({ params }) {
