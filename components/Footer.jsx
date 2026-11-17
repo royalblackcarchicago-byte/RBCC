@@ -31,8 +31,7 @@ const cols = [
     ["/service-areas/hinsdale/", "Hinsdale"], ["/service-areas/", "All service areas"],
   ]],
   ["COMPANY", [
-    ["/about/", "About us"], ["/corporate-accounts/", "Corporate accounts"],
-    ["/rates/", "Rates"], ["/faq/", "FAQ"], ["/blog/", "Blog"], ["/contact/", "Contact"],
+    ["/about/", "About us"], ["/rates/", "Rates"], ["/faq/", "FAQ"], ["/blog/", "Blog"], ["/contact/", "Contact"],
   ]],
 ];
 
