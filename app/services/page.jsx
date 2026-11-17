@@ -17,7 +17,8 @@ export const metadata = pageMeta({
 });
 
 const airportSlugs = ["black-car-service", "point-to-point", "long-distance-car-service"];
-const businessSlugs = ["corporate-car-service", "hourly-chauffeur", "roadshow-transportation", "convention-transportation"];
+// const businessSlugs = ["corporate-car-service", "hourly-chauffeur", "roadshow-transportation", "convention-transportation"];
+const businessSlugs = ["corporate-car-service", "hourly-chauffeur", "convention-transportation"];
 const occasionSlugs = ["event-transportation", "wedding-car-service", "prom-limo", "birthday-party-transportation", "funeral-car-service", "medical-appointment-transportation"];
 
 export default async function Page() {
@@ -28,7 +29,8 @@ export default async function Page() {
   const featuredCard = toCard("service", featured);
   const jet = find("private-jet-transfers") || serviceDetails[1];
   const categorized = new Set([featured.slug, jet.slug, ...airportSlugs, ...businessSlugs, ...occasionSlugs]);
-  const more = serviceDetails.filter((s) => !categorized.has(s.slug));
+  // const more = serviceDetails.filter((s) => !categorized.has(s.slug));
+  const more = serviceDetails.filter((s) => s.slug !== "roadshow-transportation" && !categorized.has(s.slug));
 
   return (
     <>
