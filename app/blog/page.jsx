@@ -7,11 +7,19 @@ import { pageMeta } from "@/lib/seo.js";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = pageMeta({
-  title: "Blog | Royal Black Car Chicago",
-  description: "Practical guides on Chicago airport transportation, private aviation ground transfers and booking a black car.",
-  path: "/blog/",
-});
+// export const metadata = pageMeta({
+//   title: "Blog | Royal Black Car Chicago",
+//   description: "Practical guides on Chicago airport transportation, private aviation ground transfers and booking a black car.",
+//   path: "/blog/",
+// });
+export const metadata = {
+  ...pageMeta({
+    title: "Blog | Royal Black Car Chicago",
+    description: "Practical guides on Chicago airport transportation, private aviation ground transfers and booking a black car.",
+    path: "/blog/",
+  }),
+  robots: { index: false, follow: true },
+};
 
 function fmt(d) {
   return new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
